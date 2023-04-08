@@ -1,0 +1,10 @@
+{
+  "previewLimit": 50,
+  "server": "localhost",
+  "port": 5432,
+  "driver": "PostgreSQL",
+  "name": "LocalDB",
+  "database": "postgres",
+  "username": "kyrylo",
+  "password": "1234"
+}
