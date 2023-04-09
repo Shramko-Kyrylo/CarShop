@@ -1,10 +1,23 @@
-{
-  "previewLimit": 50,
-  "server": "localhost",
-  "port": 5432,
-  "driver": "PostgreSQL",
-  "name": "LocalDB",
-  "database": "postgres",
-  "username": "kyrylo",
-  "password": "1234"
-}
+
+default: &default
+  adapter: mysql2
+  encoding: utf8mb4
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: root
+  password: 1234
+  socket: /var/run/mysqld/mysqld.sock
+
+development:
+  <<: *default
+  database: CarShop1_development
+
+est:
+  <<: *default
+  database: CarShop1_test
+
+
+production:
+  <<: *default
+  database: CarShop1_production
+  username: CarShop1
+  password: <%= ENV["CARSHOP1_DATABASE_PASSWORD"] %>
