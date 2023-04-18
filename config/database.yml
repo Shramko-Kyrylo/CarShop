@@ -18,6 +18,6 @@ est:
 
 production:
   <<: *default
-  database: CarShop1_production
-  username: CarShop1
+  database: CarShop_production
+  username: CarShop
   password: <%= ENV["CARSHOP1_DATABASE_PASSWORD"] %>

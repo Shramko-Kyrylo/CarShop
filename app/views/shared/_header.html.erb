@@ -1,15 +1,31 @@
 <header class="nav-menu container d-flex justify-content-between align-items-center">
-  <img src="https://img.freepik.com/premium-vector/
-  online-shop-logo-designs-concept-vector-online-store-logo-designs_7649-661.jpg"
+  <img src="https://st4.depositphotos.com/18509294/20458/v/600/depositphotos_204581226-stock-illustration-car-symbol-logo-template-stylized.jpg"
   class="logo">
 
-  <nav class="nav d-flex justify-content-evenly">
-    <%= link_to "Home", root_path %>
-    <%= link_to "Katalog", root_path %>
-    <%= link_to "Accaunt", root_path %>
-    <%= link_to "Cart", root_path %>
+  
+  <ul class="nav nav-underline justify-content-evenly">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="/">Katalog</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/brand">Brands</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/kontakts">Kontakts</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Cart</a>
+    </li>
+  </ul>
+    
   </nav>
 
-  <div id="login"> Login blok </div>
+  <div id="login"> 
+    <% if user_signed_in? %>
+      <%= button_to "Logout", destroy_user_session_path, method: :delete, class: "btn btn-outline-primary" %>
+    <% else %>
+      <%= button_to "Login", new_user_session_path, class: "btn btn-outline-primary" %> 
+    <% end %>
+  </div>
 
 </header>

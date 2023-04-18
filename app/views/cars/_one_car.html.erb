@@ -1,0 +1,27 @@
+<div id="<%= dom_id car %>">
+
+  <p>
+    <strong>Title:</strong>
+    <%= car.title %>
+  </p>
+
+  <p>
+    <%= image_tag car.preview_img if car.preview_img.present? %>
+  </p>
+
+  <p>
+    <strong>Brand:</strong>
+    <%= car.brand %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= car.description %>
+  </p>
+
+  <p>
+    <strong>Price:</strong>
+    <%= car.price %>
+  </p>
+
+</div>

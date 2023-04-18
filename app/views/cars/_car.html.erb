@@ -1,0 +1,18 @@
+<div id="<%= dom_id car %>">
+
+  <div class="card" style="width: 18rem;">
+    <%= image_tag car.preview_img if car.preview_img.present? %>
+    <div class="card-body">
+      <h5 class="card-title"><%= car.title %></h5>
+      
+      <p>
+        <strong>Price:</strong>
+        <%= car.price %>
+      </p>
+      
+      <p> <%= link_to "More details", car, class: "btn btn-outline-primary" %></p>
+
+    </div>
+  </div>
+
+</div>
