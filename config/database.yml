@@ -18,4 +18,4 @@ est:
 
 production:
   database: betonnalavka_prod
-  url: <%= ENV['DATABASE_URL'] %>
+  url: <%= ENV['JAWSDB_URL'] %>
