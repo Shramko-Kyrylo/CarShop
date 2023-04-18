@@ -1,8 +1,8 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render partial: 'one_car', locals: { car: @car } %>
+<%= render @order %>
 
 <div>
+  <%= link_to "Edit this order", edit_order_path(@order) %> |
   <%= link_to "Back to cars", cars_path %>
-  <%= link_to "Order", new_order_path %>
 </div>

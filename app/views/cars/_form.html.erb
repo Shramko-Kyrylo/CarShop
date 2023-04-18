@@ -26,9 +26,14 @@
     <%= form.file_field :preview_img %>
   </div>
 
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.rich_text_area :description %>
+  </div>
+
   <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_area :description %>
+    <%# form.label :description, style: "display: block" %>
+    <%# form.text_area :description %>
   </div>
 
   <div>

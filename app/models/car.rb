@@ -1,4 +1,5 @@
 class Car < ApplicationRecord
+  has_rich_text :description
   has_one_attached :preview_img
 
   validates :title, presence: true
