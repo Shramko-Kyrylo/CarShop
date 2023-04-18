@@ -17,4 +17,5 @@ est:
 
 
 production:
+  database: betonnalavka_prod
   url: <%= ENV['DATABASE_URL'] %>
