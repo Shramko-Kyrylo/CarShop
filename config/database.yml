@@ -17,4 +17,4 @@ est:
 
 
 production:
-    url: <%= ENV['DATABASE_URL'] %>
+  url: <%= ENV['DATABASE_URL'] %>
