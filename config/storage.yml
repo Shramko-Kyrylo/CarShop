@@ -14,14 +14,6 @@ amazon:
   region: eu-north-1
   bucket: carshopshram
 
-    
-#aws:
-#  service: S3
-#  access_key_id: #AKIATBX6775YFH2ZJ5EA
-#  secret_access_key: #Im0cDURq8E4hyhiW8obLVm8fTwOK8CV6xAGykoFS
-#  region: 
-#  bucket: carshopshram
-
 # Remember not to checkin your GCS keyfile to a repository   /tmp/15985.credentials.yml 
 #   service: GCS 
 #   project: your_project
